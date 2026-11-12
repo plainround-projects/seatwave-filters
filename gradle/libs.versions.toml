@@ -1,0 +1,22 @@
+# Every version is exact. Each was checked on Maven Central on 12 November 2026.
+[versions]
+hikari = "7.1.0"
+postgresql = "42.7.14"
+logback = "1.6.6"
+junit = "6.1.3"
+assertj = "3.27.7"
+spotless = "8.11.0"
+googleJavaFormat = "2.0.0"
+jacoco = "0.8.16"
+
+[libraries]
+hikari = { module = "com.zaxxer:HikariCP", version.ref = "hikari" }
+postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+
+[plugins]
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }

@@ -1,0 +1,12 @@
+.gradle/
+build/
+out/
+*.log
+.DS_Store
+.idea/
+*.iml
+.env
+# The lab's database passwords are generated into .secrets on every machine and never committed.
+# Not under build/: "./gradlew clean" would delete them while the database still uses them.
+.secrets/
+*.password
